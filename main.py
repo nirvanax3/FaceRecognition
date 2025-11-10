@@ -47,6 +47,7 @@ while True:
         print("faceDis", faceDis)
 
 
+
     #cv2.imshow("Webcam",img)
     cv2.imshow("Face Attendance",imgBackground)
     cv2.waitKey(1)
