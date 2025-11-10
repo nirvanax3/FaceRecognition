@@ -21,6 +21,13 @@ while True:
     imgBackground[44:44 + 633, 808:808 + 414] = imgModeList[0]
 
 
-    #cv2.imshow("Webcam",img)
-    cv2.imshow("Face Attendance",imgBackground)
-    cv2.waitKey(1)
+#import the encoding file
+
+
+#load the encoding file
+file = open("EncodeFile.p",'rb')
+encodeListKnown = pickle.load(file)
+
+#cv2.imshow("Webcam",img)
+cv2.imshow("Face Attendance",imgBackground)
+cv2.waitKey(1)
