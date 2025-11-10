@@ -16,9 +16,9 @@ for modePath in PathList:
     studentIds.append(os.path.splitext(modePath)[0])
 print(studentIds)
 
-def findEncodings(imgagesList):
+def findEncodings(imagesList):
     encodeList = []
-    for img in imgagesList:
+    for img in imagesList:
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         encode = face_recognition.face_encodings(img)[0]
         encodeList.append(encode)
