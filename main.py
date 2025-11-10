@@ -1,5 +1,6 @@
 import cv2
 import os
+import pickle
 
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)
@@ -21,10 +22,10 @@ while True:
     imgBackground[44:44 + 633, 808:808 + 414] = imgModeList[0]
 
 
-#import the encoding file
+#Import the encoding file
 
 
-#load the encoding file
+#Load the encoding file
 file = open("EncodeFile.p",'rb')
 encodeListKnown = pickle.load(file)
 
