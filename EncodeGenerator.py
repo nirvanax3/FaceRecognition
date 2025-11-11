@@ -31,9 +31,6 @@ for modePath in PathList:
     blob.upload_from_filename(fileName)
 
 
-
-
-
 print(studentIds)
 
 def findEncodings(imagesList):
