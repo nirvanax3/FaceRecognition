@@ -66,8 +66,20 @@ while True:
             #print("matches", matches)
             #print("faceDis", faceDis)
 
+            tolerance = 0.5  # smaller = stricter
+            matches = face_recognition.compare_faces(encodeListKnown, encodeFace, tolerance=tolerance)
+            faceDis = face_recognition.face_distance(encodeListKnown, encodeFace)
+
             matchIndex = np.argmin(faceDis)
             #print("Match Index", matchIndex)
+
+            if matches[matchIndex] and faceDis[matchIndex] < tolerance:
+                id = studentIds[matchIndex]
+                # Recognized as known student
+            else:
+                id = None
+                modeType = 0  # Unknown face mode
+                counter = 0
 
             if matches[matchIndex]:
                 #print("Known Face Detected")
@@ -79,6 +91,9 @@ while True:
                 id = studentIds[matchIndex]
 
                 if counter == 0:
+                    cvzone.putTextRect(imgBackground,"Loading",(275,400))
+                    cv2.imshow("Face Attendance",imgBackground)
+                    cv2.waitKey(1)
                     counter = 1
                     modeType = 1
 
