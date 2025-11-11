@@ -37,7 +37,7 @@ data = {
             "Name" : "Elon Musk",
             "Major" : "ECE",
             "Starting_Year" : 2023,
-            "Total_Attendance" : 4,
+            "Total_Attendance" : 3,
             "Standing" : "B",
             "Year" : 3,
             "Last_Attendance_Time" : "2025-09-01 00:54:34",
