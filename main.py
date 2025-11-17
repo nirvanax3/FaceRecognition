@@ -78,7 +78,7 @@ while True:
                 # Recognized as known student
             else:
                 id = None
-                modeType = 0  # Unknown face mode
+                modeType = 3  # Unknown face mode
                 counter = 0
 
             if matches[matchIndex]:
