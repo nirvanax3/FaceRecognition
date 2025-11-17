@@ -10,10 +10,10 @@ firebase_admin.initialize_app(cred,{
 ref = db.reference('Students')
 
 data = {
-    "456456" :
+    "121212" :
         {
-            "Name" : "Lalit Malik",
-            "Major" : "CSE",
+            "Name" : "Rishita",
+            "Major" : "IT",
             "Starting_Year" : 2023,
             "Total_Attendance" : 10,
             "Standing" : "G",
