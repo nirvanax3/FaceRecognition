@@ -36,7 +36,7 @@ This project provides a basic setup to:
    ```bash
    python main.py  
   This will open the webcam (or process images) and attempt to recognize faces based on the encodings.
-4. When a known face is detected, their name will be shown. Unknown faces will be flagged accordingly.
+  4. When a known face is detected, their name will be shown. Unknown faces will be flagged accordingly.
 
 ## Folder Structure
     FaceRecognition/
