@@ -20,8 +20,10 @@ This project provides a basic setup to:
    ```bash
    pip install opencv-python face_recognition numpy
   (and any others required by this code)
+  
 4. A working webcam (if using live feed) or sample images.
-5. A folder structure roughly:
+   
+6. A folder structure roughly:
   * Images/ → holds sample images of people.
   * Resources/ → holds other required assets (if any).
   * EncodeGenerator.py → generates the face encodings.
@@ -36,6 +38,7 @@ This project provides a basic setup to:
    ```bash
    python main.py  
   This will open the webcam (or process images) and attempt to recognize faces based on the encodings.
+  
   4. When a known face is detected, their name will be shown. Unknown faces will be flagged accordingly.
 
 ## Folder Structure
